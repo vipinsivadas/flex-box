@@ -1,0 +1,106 @@
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    height: 100vh;
+}
+body{
+    background-color: rgb(219, 202, 228);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+header {
+    background-color: salmon;
+    min-height: 100px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+   
+    padding-inline: 2rem;
+  }
+  
+  header ul {
+    list-style: none;
+  
+    display: flex;
+    column-gap: 10rem;
+  }
+  
+  header ul a {
+    text-decoration: none;
+  }
+  
+  
+  section {
+    background-color: sandybrown;
+    display: flex;
+    flex: 1;
+  
+    padding-inline: 2rem;
+  }
+  
+  aside {
+    background-color: silver;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  main {
+    background-color: springgreen;
+    flex: 5;
+  
+    display: flex;
+    gap: 10px;
+  
+    flex-wrap: wrap;
+    align-content: flex-start;
+  
+    justify-content: flex-start;
+  
+    padding: 2rem;
+  }
+  
+  div.box {
+    background-color: rgb(243, 137, 137);
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+  }
+  
+  footer {
+    background-color: rgb(50, 235, 130);
+    min-height: 80px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+  
+    header {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    aside#aside-1 {
+      display: none;
+    }
+  
+    main {
+      justify-content: center;
+      align-content: center;
+    }
+  
+    aside#aside-2 {
+      min-height: 200px;
+    }
+  }
